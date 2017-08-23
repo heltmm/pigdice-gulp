@@ -9,50 +9,57 @@
   </head>
   <body>
     <div class="container">
-      <h1>Pig Dice</h1>
-      <div class="row">
-        <div class="col-sm-12">
-          <form id="dice">
+      <div class="jumbotron">
+        <h1>Pig Dice</h1>
+      </div>
+      <form id="dice">
+        <div class="">
 
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
             <div class="player1">
-              <button id="rollButton1" type="button" class="btn btn-primary">Roll</button>
-
-              <button id="holdButton1" type="button" class="btn btn-info">Hold</button>
-
-              <h2>Roll: <span id="rollResult1"></span></h2>
 
               <h2>Player 1</h2>
               <h2>Score: <span id="rollScore1"></span></h2>
 
               <h2>Total: <span id="rollTotal1"></span></h2>
+
+
+                <button id="rollButton1" type="button" class="btn btn-primary">Roll</button>
+
+                <button id="holdButton1" type="button" class="btn btn-info">Hold</button>
+
+              </div>
             </div>
+          <div class="col-sm-4">
+            <div id="middleColumn">
 
+                <h2><span id="rollResult1"></span></h2>
+
+                <h2><span id="rollResult2"></span></h2>
+
+            </div>
+          </div>
+          <div class="col-sm-4">
             <div class="player2">
-              <button id="rollButton2" type="button" class="btn btn-primary">Roll</button>
 
-              <button id="holdButton2" type="button" class="btn btn-info">Hold</button>
 
-              <h2>Roll: <span id="rollResult2"></span></h2>
 
               <h2>Player 2</h2>
               <h2>Score: <span id="rollScore2"></span></h2>
 
               <h2>Total: <span id="rollTotal2"></span></h2>
-            </div>
-            <!-- <div class="form-group">
-              <label for="currentScore">Current Score</label>
-              <input id="currentScore" class="form-control" type="number">
-            </div>
 
-            <div class="form-group">
-              <label for="totalScore">Total Score</label>
-              <input id="totalScore" class="form-control" type="number">
-            </div> -->
 
-          </form>
-<!-- end row -->
+                <button id="rollButton2" type="button" class="btn btn-primary">Roll</button>
+
+                <button id="holdButton2" type="button" class="btn btn-info">Hold</button>
+
+            </div>
+          </div>
         </div>
-      </div>
+      </form>
 <!-- end container -->
     </div>
   </body>

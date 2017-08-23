@@ -5,8 +5,8 @@ function Player(player, score, total) {
  this.rollTotal = total;
 }
 
-var player1 = new Player("Player1", 0, 0);
-var player2 = new Player('Player2', 0, 0);
+var player1 = new Player('', 0, 0);
+var player2 = new Player('', 0, 0);
 
 function randomInt(min, max) {
   min = Math.ceil(min);
@@ -15,10 +15,11 @@ function randomInt(min, max) {
 }
 
 Player.prototype.diceRoll = function(roll) {
-  console.log(roll)
   if (roll === 1) {
     this.rollScore = 0;
-  $('.player1, .player2').toggle();
+    $('#rollResult1, #rollResult2').toggle();
+    $('#rollButton1, #rollButton2').toggle();
+    $('#holdButton1, #holdButton2').toggle();
   } else {
     this.rollScore += roll;
   }
@@ -29,7 +30,9 @@ Player.prototype.hold = function() {
   this.rollScore = 0;
   if (this.rollTotal >= 100)
     alert('You win ' + this.player + '!')
-    $('.player1, .player2').toggle();
+    $('#rollResult1, #rollResult2').toggle();
+    $('#rollButton1, #rollButton2').toggle();
+    $('#holdButton1, #holdButton2').toggle();
 }
 
 

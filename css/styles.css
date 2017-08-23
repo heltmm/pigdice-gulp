@@ -1,7 +1,25 @@
 form input[type='number']{
-
 }
 
-.player2 {
+#rollResult2 {
   display: none;
+}
+
+#rollButton2, #holdButton2 {
+  display: none;
+}
+
+.jumbotron {
+  background-color: white;
+  text-align: center;
+}
+
+.row{
+  text-align: center;
+  background-color:;
+}
+
+#middleColumn h2 {
+  text-align: center;
+  font-size: 12em;
 }
