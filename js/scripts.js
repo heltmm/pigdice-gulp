@@ -39,6 +39,24 @@ Player.prototype.hold = function() {
 
 // front-end logic
 $(document).ready(function() {
+
+// name form
+$('form#dice').submit(function(event) {
+  event.preventDefault();
+  player1.player = $('input#userName1').val();
+  player2.player = $('input#userName2').val();
+  if (player1.player === '' || player2.player === '') {
+    alert("Did you enter a name for both players?")
+    return;
+  } else {
+    $('#midRow').show(800);
+    $('#name1').append(player1.player);
+    $('#name2').append(player2.player);
+    $('#colHide').hide();
+  }
+});
+
+
 // player one
 $('#rollButton1').click(function(event) {
   event.preventDefault();

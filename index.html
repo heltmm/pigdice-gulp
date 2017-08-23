@@ -13,14 +13,34 @@
         <h1>Pig Dice</h1>
       </div>
       <form id="dice">
-        <div class="">
+        <div id="topRow" class="row">
+          <div class="col-sm-4">
 
+          </div>
+          <div id="colHide" class="col-sm-4">
+            <div class="form-group">
+              <label for="userName1">Enter Player2</label>
+              <input type="text" class="form-control" id="userName1">
+            </div>
+
+            <div class="form-group">
+              <label for="userName2">Enter Player1</label>
+              <input type="text" class="form-control" id="userName2">
+            </div>
+
+            <button id="playButton" type="submit" class="btn btn-info">Play!</button>
+
+          </div>
+          <div class="col-sm-4">
+
+          </div>
         </div>
-        <div class="row">
+
+        <div id="midRow" class="row">
           <div class="col-sm-4">
             <div class="player1">
 
-              <h2>Player 1</h2>
+              <h2 id="name1"></h2>
               <h2>Score: <span id="rollScore1"></span></h2>
 
               <h2>Total: <span id="rollTotal1"></span></h2>
@@ -46,7 +66,7 @@
 
 
 
-              <h2>Player 2</h2>
+              <h2 id="name2"></h2>
               <h2>Score: <span id="rollScore2"></span></h2>
 
               <h2>Total: <span id="rollTotal2"></span></h2>
