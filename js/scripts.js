@@ -77,13 +77,13 @@ $('#rollButton1').click(function(event) {
     event.preventDefault();
     var roll = randomInt(1, 7); //definition of a roll
     $('#rollResult2').text(roll);
-    player1.diceRoll(roll);
-    $('#rollScore2').text(player1.rollScore);
+    player2.diceRoll(roll);
+    $('#rollScore2').text(player2.rollScore);
     });
 
     $('#holdButton2').click(function(event) {
       event.preventDefault();
-      player1.hold();
-      $('#rollTotal2').text(player1.rollTotal);
+      player2.hold();
+      $('#rollTotal2').text(player2.rollTotal);
     });
 });
