@@ -1,3 +1,7 @@
 form input[type='number']{
 
 }
+
+.player2 {
+  display: none;
+}

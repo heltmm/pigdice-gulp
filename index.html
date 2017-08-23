@@ -14,17 +14,31 @@
         <div class="col-sm-12">
           <form id="dice">
 
+            <div class="player1">
+              <button id="rollButton1" type="button" class="btn btn-primary">Roll</button>
 
-            <button id="rollButton" type="button" class="btn btn-primary">Roll</button>
+              <button id="holdButton1" type="button" class="btn btn-info">Hold</button>
 
-            <!-- <button id="holdButton" type="button" class="btn btn-info">Hold</button> -->
+              <h2>Roll: <span id="rollResult1"></span></h2>
 
-            <h2>Roll: <span id="rollResult"></span></h2>
+              <h2>Player 1</h2>
+              <h2>Score: <span id="rollScore1"></span></h2>
 
-            <h2>Score: <span id="rollScore"></span></h2>
+              <h2>Total: <span id="rollTotal1"></span></h2>
+            </div>
 
-            <h2>Total: <span id="rollTotal"></span></h2>
+            <div class="player2">
+              <button id="rollButton2" type="button" class="btn btn-primary">Roll</button>
 
+              <button id="holdButton2" type="button" class="btn btn-info">Hold</button>
+
+              <h2>Roll: <span id="rollResult2"></span></h2>
+
+              <h2>Player 2</h2>
+              <h2>Score: <span id="rollScore2"></span></h2>
+
+              <h2>Total: <span id="rollTotal2"></span></h2>
+            </div>
             <!-- <div class="form-group">
               <label for="currentScore">Current Score</label>
               <input id="currentScore" class="form-control" type="number">
