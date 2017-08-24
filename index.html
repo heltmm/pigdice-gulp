@@ -12,74 +12,90 @@
       <div class="jumbotron">
         <h1>Pig Dice</h1>
       </div>
-      <form id="dice">
-        <div id="topRow" class="row">
-          <div class="col-sm-4">
 
-          </div>
-          <div id="colHide" class="col-sm-4">
-            <div class="form-group">
-              <label for="userName1">Enter Player2</label>
-              <input type="text" class="form-control" id="userName1">
-            </div>
+      <div id="topRow" class="row">
+        <div class="col-sm-3">
 
-            <div class="form-group">
-              <label for="userName2">Enter Player1</label>
-              <input type="text" class="form-control" id="userName2">
-            </div>
-
-            <button id="playButton" type="submit" class="btn btn-info">Play!</button>
-
-          </div>
-          <div class="col-sm-4">
-
-          </div>
         </div>
 
-        <div id="midRow" class="row">
-          <div class="col-sm-4">
-            <div class="player1">
-
-              <h2 id="name1"></h2>
-              <h2>Score: <span id="rollScore1"></span></h2>
-
-              <h2>Total: <span id="rollTotal1"></span></h2>
-
-
-                <button id="rollButton1" type="button" class="btn btn-primary">Roll</button>
-
-                <button id="holdButton1" type="button" class="btn btn-info">Hold</button>
-
+          <div id="colHide" class="col-sm-6">
+            <form id="dice">
+              <h2>Rules:</h2>
+              <ul>
+                <li>Each player takes turns rolling dice.</li>
+                <li>If you roll a 2-6 add that to your score.</li>
+                <li>You can hold whenever you want and add your score to your total points.</li>
+                <li>If you roll a 1 you lose points for that turn and turn is over.</li>
+              </ul><br><br>
+              <div class="form-group">
+                <label for="userName1">Enter Player 1</label>
+                <input type="text" class="form-control" id="userName1">
               </div>
-            </div>
-          <div class="col-sm-4">
-            <div id="middleColumn">
 
-                <h2><span id="rollResult1"></span></h2>
+              <button id="playHuman" type="submit" class="btn btn-info">Human</button>
+              <button id="playAI" type="submit" class="btn btn-danger">AI</button>
 
-                <h2><span id="rollResult2"></span></h2>
+            </form>
+
+            <form id="dice3">
+              <div id="optionalPlayer" class="form-group">
+                <label for="userName2">Enter Player 2</label>
+                <input type="text" class="form-control" id="userName2">
+              </div>
+
+              <button id="playButton" type="submit" class="btn btn-info">Play!</button>
+
+            </form>
+          </div>
+        <div class="col-sm-3">
+
+        </div>
+      </div>
+
+      <div id="midRow" class="row">
+        <div class="col-sm-4">
+          <div class="player1">
+
+            <h2 id="name1"></h2>
+            <h2>Score: <span id="rollScore1"></span></h2>
+
+            <h2>Total: <span id="rollTotal1"></span></h2>
+
+
+              <button id="rollButton1" type="button" class="btn btn-primary">Roll</button>
+
+              <button id="holdButton1" type="button" class="btn btn-info">Hold</button>
 
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="player2">
+        <div class="col-sm-4">
+          <div id="middleColumn">
 
+              <h2><span id="rollResult1"></span></h2>
 
+              <h2><span id="rollResult2"></span></h2>
 
-              <h2 id="name2"></h2>
-              <h2>Score: <span id="rollScore2"></span></h2>
-
-              <h2>Total: <span id="rollTotal2"></span></h2>
-
-
-                <button id="rollButton2" type="button" class="btn btn-primary">Roll</button>
-
-                <button id="holdButton2" type="button" class="btn btn-info">Hold</button>
-
-            </div>
           </div>
         </div>
-      </form>
+        <div class="col-sm-4">
+          <div class="player2">
+
+
+
+            <h2 id="name2"></h2>
+            <h2>Score: <span id="rollScore2"></span></h2>
+
+            <h2>Total: <span id="rollTotal2"></span></h2>
+
+
+              <button id="rollButton2" type="button" class="btn btn-primary">Roll</button>
+
+              <button id="holdButton2" type="button" class="btn btn-info">Hold</button>
+
+          </div>
+        </div>
+      </div>
+
 <!-- end container -->
     </div>
   </body>

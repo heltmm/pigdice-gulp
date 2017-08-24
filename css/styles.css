@@ -31,3 +31,9 @@ form input[type='number']{
 .form-group{
   display: block;
 }
+#optionalPlayer{
+  display: none;
+}
+#playButton{
+  display: none;
+}
