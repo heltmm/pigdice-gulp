@@ -1,4 +1,10 @@
+var Pigdice = require('./../js/pigdice.js').pigdiceModule;
+
 $(document).ready(function() {
+
+var player1 = new Player('', 0, 0);
+var player2 = new Player('', 0, 0);
+var computer = new Player('Summer', 0, 0);
 
 // human form
 $('form#dice').submit(function(event) {
