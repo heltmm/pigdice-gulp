@@ -5,11 +5,15 @@ function Player(player, score, total) {
  this.rollTotal = total;
 }
 
-Integer.prototype.randomInt(min, max) {
+var player1 = new Player('', 0, 0);
+var player2 = new Player('', 0, 0);
+var computer = new Player('Summer', 0, 0);
+
+Player.prototype.randomInt = function(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
-}
+};
 
 Player.prototype.diceRoll = function(roll) {
   if (roll === 1) {
@@ -32,4 +36,4 @@ Player.prototype.hold = function() {
     $('#holdButton1, #holdButton2').toggle();
 }
 
-exports.pigdiceModule = Pigdice;
+exports.playerModule = Player;
