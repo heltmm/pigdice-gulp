@@ -30,10 +30,10 @@ Player.prototype.hold = function() {
   this.rollTotal += this.rollScore;
   this.rollScore = 0;
   if (this.rollTotal >= 100)
-    alert('You win ' + this.player + '!')
+    alert('You win ' + this.player + '!');
     $('#rollResult1, #rollResult2').toggle();
     $('#rollButton1, #rollButton2').toggle();
     $('#holdButton1, #holdButton2').toggle();
-}
+};
 
 exports.playerModule = Player;

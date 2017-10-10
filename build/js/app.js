@@ -31,11 +31,11 @@ Player.prototype.hold = function() {
   this.rollTotal += this.rollScore;
   this.rollScore = 0;
   if (this.rollTotal >= 100)
-    alert('You win ' + this.player + '!')
+    alert('You win ' + this.player + '!');
     $('#rollResult1, #rollResult2').toggle();
     $('#rollButton1, #rollButton2').toggle();
     $('#holdButton1, #holdButton2').toggle();
-}
+};
 
 exports.playerModule = Player;
 
@@ -53,7 +53,7 @@ $('form#dice').submit(function(event) {
   event.preventDefault();
   player1.player = $('input#userName1').val();
   if (player1.player === '') {
-    alert("Did you enter a name for player 1?")
+    alert("Did you enter a name for player 1?");
     return;
   } else {
     $('#playButton').show();
@@ -69,7 +69,7 @@ $('#playAI').click(function(event) {
   event.preventDefault();
   player1.player = $('input#userName1').val();
   if (player1.player === '') {
-    alert("Did you enter a name for player 1?")
+    alert("Did you enter a name for player 1?");
     return;
   } else {
   $('#name1').append(player1.player);
@@ -84,7 +84,7 @@ $('form#dice3').submit(function(event) {
   event.preventDefault();
   player2.player = $('input#userName2').val();
   if (player1.player === '' || player2.player === '') {
-    alert("Did you enter a name for both players?")
+    alert("Did you enter a name for both players?");
     return;
   } else {
     $('#midRow').show(800);
@@ -123,6 +123,10 @@ $('#rollButton1').click(function(event) {
     player2.hold();
     $('#rollTotal2').text(player2.rollTotal);
   });
+});
+
+$(document).ready(function(){
+  $('#time').text(moment());
 });
 
 },{"./../js/player.js":1}]},{},[2]);

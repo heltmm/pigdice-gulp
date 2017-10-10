@@ -11,7 +11,7 @@ $('form#dice').submit(function(event) {
   event.preventDefault();
   player1.player = $('input#userName1').val();
   if (player1.player === '') {
-    alert("Did you enter a name for player 1?")
+    alert("Did you enter a name for player 1?");
     return;
   } else {
     $('#playButton').show();
@@ -27,7 +27,7 @@ $('#playAI').click(function(event) {
   event.preventDefault();
   player1.player = $('input#userName1').val();
   if (player1.player === '') {
-    alert("Did you enter a name for player 1?")
+    alert("Did you enter a name for player 1?");
     return;
   } else {
   $('#name1').append(player1.player);
@@ -42,7 +42,7 @@ $('form#dice3').submit(function(event) {
   event.preventDefault();
   player2.player = $('input#userName2').val();
   if (player1.player === '' || player2.player === '') {
-    alert("Did you enter a name for both players?")
+    alert("Did you enter a name for both players?");
     return;
   } else {
     $('#midRow').show(800);
